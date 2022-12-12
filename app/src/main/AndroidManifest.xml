@@ -27,12 +27,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sensors"
         tools:targetApi="31">
+
         <meta-data
             android:name="com.google.ar.core"
             android:value="required" />
+
         <meta-data
             android:name="android.app.lib_name"
             android:value="" />
+
         <activity
             android:name=".HomescreenActivity"
             android:exported="true">
