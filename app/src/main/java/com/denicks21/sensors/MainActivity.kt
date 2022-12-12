@@ -45,10 +45,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, Phonometer::class.java))
         }
 
-        // Switch to "Measure"
-        val btnMeasure = findViewById<Button>(R.id.btnMeasure)
-        btnMeasure.setOnClickListener {
-            startActivity(Intent(this, Measure::class.java))
+        // Switch to "AR Measurements"
+        val btnARMeasurements = findViewById<Button>(R.id.btnARMeasurements)
+        btnARMeasurements.setOnClickListener {
+            startActivity(Intent(this, ARMeasurements::class.java))
         }
 
         if (checkPermission()) {

@@ -2,7 +2,6 @@ package com.denicks21.sensors
 
 import android.app.Activity
 import android.app.ActivityManager
-import android.content.Intent
 import android.net.Uri
 import android.os.Build
 import android.os.Build.VERSION_CODES
@@ -14,7 +13,6 @@ import android.view.MotionEvent
 import android.view.View
 import android.widget.*
 import android.widget.SeekBar.OnSeekBarChangeListener
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.google.ar.core.Anchor
 import com.google.ar.core.HitResult
@@ -33,7 +31,7 @@ import java.text.DecimalFormat
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
-class Measure : AppCompatActivity() {
+class ARMeasurements : AppCompatActivity() {
     private var upDistance = 0f
     private var arFragment: ArFragment? = null
     private var andyRenderable: ModelRenderable? = null
@@ -63,7 +61,7 @@ class Measure : AppCompatActivity() {
             this.supportActionBar!!.hide()
         } catch (e: NullPointerException) {
         }
-        setContentView(R.layout.activity_measure)
+        setContentView(R.layout.activity_ar_measurements)
         arFragment = supportFragmentManager.findFragmentById(R.id.ux_fragment) as ArFragment?
         text = findViewById<View>(R.id.text) as TextView
         sk_height_control = findViewById<View>(R.id.sk_height_control) as SeekBar
@@ -85,7 +83,7 @@ class Measure : AppCompatActivity() {
         }
 
         btn_save!!.setOnClickListener {
-            if (fl_measurement != 0.0f) saveDialog() else Toast.makeText(this@Measure,
+            if (fl_measurement != 0.0f) saveDialog() else Toast.makeText(this@ARMeasurements,
                 "Make a measurement before saving",
                 Toast.LENGTH_SHORT).show()
         }
@@ -246,7 +244,7 @@ class Measure : AppCompatActivity() {
     }
 
     companion object {
-        private val TAG = Measure::class.java.simpleName
+        private val TAG = ARMeasurements::class.java.simpleName
         private const val MIN_OPENGL_VERSION = 3.0
     }
 }

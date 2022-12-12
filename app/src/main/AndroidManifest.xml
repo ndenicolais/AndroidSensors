@@ -50,7 +50,7 @@
         <activity android:name=".Luxmeter" />
         <activity android:name=".Accelerometer" />
         <activity android:name=".Phonometer" />
-        <activity android:name=".Measure" />
+        <activity android:name=".ARMeasurements" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
