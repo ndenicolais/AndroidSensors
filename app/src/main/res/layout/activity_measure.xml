@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Measure">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/ux_fragment"
+        android:name="com.google.ar.sceneform.ux.ArFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/translucent_black">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:text="Type"
+            android:layout_marginVertical="7dp"/>
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/sk_height_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="100dp"
+        android:theme="@style/SeekBarColor"
+        android:min="0"
+        android:max="500"
+        android:enabled="false"
+        android:progress="10"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:id="@+id/btn_width"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Width"
+            android:background="@drawable/btn_basic"
+            android:backgroundTint="@color/primary"
+            android:textColor="@color/secondary"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Save"
+            android:background="@drawable/btn_basic"
+            android:backgroundTint="@color/primary"
+            android:textColor="@color/secondary"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <Button
+            android:id="@+id/btn_height"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Height"
+            android:background="@drawable/btn_basic"
+            android:backgroundTint="@color/primary"
+            android:textColor="@color/secondary"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+</FrameLayout>

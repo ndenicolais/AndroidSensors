@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="5dp"
+    tools:context=".Compass">
+
+    <TextView
+        android:id="@+id/compassValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/imageViewCompass"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="100dp"
+        android:text="0.0"
+        android:textColor="@color/primary"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/dial" />
+
+    <ImageView
+        android:id="@+id/imageViewCompass"
+        android:layout_width="20dp"
+        android:layout_height="240dp"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/hands"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/imageViewCompass"
+        android:layout_marginTop="70dp"
+        android:text="Save value"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/imageViewCompass"
+        android:layout_marginTop="100dp"
+        android:id="@+id/save_button"
+        android:background="@drawable/btn_save"
+        android:backgroundTint="@color/primary"/>
+</RelativeLayout>
