@@ -3,10 +3,14 @@
     <style name="Theme.Sensors" parent="Theme.AppCompat.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/secondary</item>
+        <item name="colorPrimaryVariant">@color/secondaryVariant</item>
+        <item name="colorOnPrimary">@color/secondaryOn</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/primary</item>
+        <item name="colorSecondaryVariant">@color/primaryVariant</item>
+        <item name="colorOnSecondary">@color/primaryOn</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" >?attr/colorPrimary</item>
+        <item name="android:statusBarColor" >?attr/colorSecondary</item>
         <!-- Hide status bar -->
         <item name="android:windowFullscreen">true</item>
     </style>

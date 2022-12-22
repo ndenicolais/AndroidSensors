@@ -5,7 +5,7 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
+    android:background="@color/primary"
     android:padding="5dp"
     tools:context=".Compass">
 
@@ -17,7 +17,6 @@
         android:layout_centerInParent="true"
         android:layout_marginBottom="100dp"
         android:text="0.0"
-        android:textColor="@color/primary"
         android:textSize="30sp"
         android:textStyle="bold" />
 
@@ -44,7 +43,7 @@
         android:text="Save value"
         android:textSize="30sp"
         android:textStyle="bold"
-        android:textColor="@color/primary"/>
+        android:textColor="@color/secondary"/>
 
     <Button
         android:layout_width="100dp"
@@ -54,5 +53,5 @@
         android:layout_marginTop="100dp"
         android:id="@+id/save_button"
         android:background="@drawable/btn_save"
-        android:backgroundTint="@color/primary"/>
+        android:backgroundTint="@color/secondary"/>
 </RelativeLayout>

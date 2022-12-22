@@ -53,7 +53,7 @@ class Phonometer : AppCompatActivity(), ActivityCompat.OnRequestPermissionsResul
                 Manifest.permission.RECORD_AUDIO
             ) != PackageManager.PERMISSION_GRANTED
         ) {
-            Toast.makeText(this, getString(R.string.permission_denied),
+            Toast.makeText(this, "Accept permissions",
                 Toast.LENGTH_SHORT).show()
 
             ActivityCompat.requestPermissions(this,
@@ -89,7 +89,7 @@ class Phonometer : AppCompatActivity(), ActivityCompat.OnRequestPermissionsResul
 
         if(requestCode == requestCodeAudioRecord){
             if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                Toast.makeText(this, getString(R.string.permission_granted),
+                Toast.makeText(this, "Permission granted",
                     Toast.LENGTH_SHORT).show()
 
                 startListening()

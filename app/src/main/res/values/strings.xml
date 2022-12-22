@@ -1,77 +1,8 @@
 <resources>
     <string name="app_name">Sensors</string>
-
-    // Luxmeter
-    <string name="about">About</string>
-    <string name="luxExit">Exit</string>
-    <string name="back">Back</string>
-    <string name="start_lux">Start</string>
-    <string name="stop_lux">Stop</string>
-    <string name="fix_button">Record</string>
-
-    // Phonometer
-    <string name="permission_denied">I permessi per registrare sono necessari</string>
-    <string name="permission_granted">Permission Granted</string>
-
-    // File manager
-    <string name="phone_storage">Memoria interna</string>
-    <string name="sd_card">SD Card</string>
-    <string name="filename">Nome file</string>
-    <string name="filesize_files_in_folder">Dim file/Files</string>
-    <string name="share_with">Condividi</string>
-    <string name="rename">Rinomina</string>
-    <string name="delete">Elimina</string>
-    <string name="type_a_name_here">Insersci un nome</string>
-    <string name="no_items_selected">Nessun file selezionato</string>
-    <string name="to_select_items">Per selezionare un file clicca sull icona</string>
-    <string name="ok">OK</string>
-    <string name="already_exist">Esistente</string>
-    <string name="empty_name">Nome vuoto</string>
-    <string name="enter_name">Inserisci un nome</string>
-    <string name="attention">Attenzione</string>
-    <string name="info">Info</string>
-    <string name="no_results">Nessun risultato</string>
-    <string name="rationale">Richiesta di accesso ai files per visualizzarli</string>
-    <string name="proceed">Procedi</string>
-    <string name="exit">Esci</string>
-    <string name="no_sdcard">SD Card non rilevata</string>
-    <string name="cancel">Cancella</string>
-    <string name="yes">Si</string>
-    <string name="no">No</string>
-    <string name="new_folder">Crea una nuova cartella</string>
-    <string name="are_you_sure">Confermi?</string>
-    <string name="delete_selected_items">Elimina elemento selezionato</string>
-    <string name="delete_item">"Elimina elemento: "</string>
-    <string name="your_notes">Tue note</string>
-    <string name="create_new_textfile">Crea un nuovo file di testo</string>
-    <string name="name">Nome:</string>
-    <string name="notes">Note:</string>
-    <string name="create_new_folder">Crea una nuova cartella</string>
-    <string name="search">Cerca</string>
-    <string name="title">Titolo</string>
-    <string name="text">Testo</string>
-    <string name="cannot_copy_into_itself">Non puoi copiare la cartella in essa</string>
-    <string name="cannot_move_into_itself">Non puoi spostare la cartella in essa</string>
-    <string name="open_with">Apri con</string>
-    <string name="copy_to">Copia in</string>
-    <string name="move_to">Sposta in</string>
-    <string name="sdcard_permission">Consenti i permessi alla SD Card</string>
-    <string name="copying">Copia in corso</string>
-    <string name="deleting">Eliminazione in corso</string>
-    <string name="moving">Spostamento in corso</string>
-    <string name="searching">Ricerca in corso</string>
-    <string name="wait">Attendi</string>
-    <string name="create_new_txt_msg">Puoi creare un nuovo file di testo in questa destinazione</string>
-    <string name="create_new_folder_msg">Puoi creare una nuova cartella in questa destinazione</string>
-    <string name="select_all_items">Seleziona tutti gli elementi</string>
-    <string name="select_all_items_msg">Puoi selezionare tutti gli elementi in questa destinazione</string>
-    <string name="delete_selected_items_msg">Puoi eliminare tutti gli elementi</string>
-    <string name="copy_selected_items">Copia elemento selezionato</string>
-    <string name="copy_selected_items_msg">After pressing this button, you should navigate to the target location. At the target location you should press the tick button to start the copy process.</string>
-    <string name="move_selected_items">Sposta elemento selezionato</string>
-    <string name="move_selected_items_msg">After pressing this button, you should navigate to the target location. At the target location you should press the tick button to start the move process.</string>
-    <string name="search_recursively">Cerca ricorsivamente</string>
-    <string name="search_recursively_msg">You can search for items. It searches at the current location and in the subfolders recursively.</string>
-    <string name="switch_source">Cambia memoria</string>
-    <string name="switch_source_msg">You can switch between internal storage and SD card, if an SD card is inserted.</string>
+    <string name="accelerometerTitle">Accelerometer</string>
+    <string name="arMeasurementsTitle">AR Measurements</string>
+    <string name="compassTitle">Compass</string>
+    <string name="luxmeterTitle">Luxmeter</string>
+    <string name="phonometerTitle">Phonometer</string>
 </resources>
