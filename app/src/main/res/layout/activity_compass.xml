@@ -16,7 +16,8 @@
         android:layout_above="@id/imageViewCompass"
         android:layout_centerInParent="true"
         android:layout_marginBottom="100dp"
-        android:text="0.0"
+        android:text="@string/valueStart"
+        android:textColor="@color/secondaryOn"
         android:textSize="30sp"
         android:textStyle="bold" />
 
@@ -40,7 +41,7 @@
         android:layout_centerInParent="true"
         android:layout_below="@id/imageViewCompass"
         android:layout_marginTop="70dp"
-        android:text="Save value"
+        android:text="@string/valueSave"
         android:textSize="30sp"
         android:textStyle="bold"
         android:textColor="@color/secondary"/>

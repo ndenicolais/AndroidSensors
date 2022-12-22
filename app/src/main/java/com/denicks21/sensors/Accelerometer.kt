@@ -55,9 +55,9 @@ class Accelerometer : Activity(), SensorEventListener {
             val xVal = event.values[0]
             val yVal = event.values[1]
             val zVal = event.values[2]
-            sx = "X Value : <font color = '#800080'> $xVal</font>"
-            sy = "Y Value : <font color = '#800080'> $yVal</font>"
-            sz = "Z Value : <font color = '#800080'> $zVal</font>"
+            sx = "X Value : <font color = '#FFFF66'> $xVal</font>"
+            sy = "Y Value : <font color = '#FFFF66'> $yVal</font>"
+            sz = "Z Value : <font color = '#FFFF66'> $zVal</font>"
             x!!.text = Html.fromHtml(sx)
             y!!.text = Html.fromHtml(sy)
             z!!.text = Html.fromHtml(sz)

@@ -5,4 +5,8 @@
     <string name="compassTitle">Compass</string>
     <string name="luxmeterTitle">Luxmeter</string>
     <string name="phonometerTitle">Phonometer</string>
+    <string name="valueStart">0</string>
+    <string name="valueSave">Save value</string>
+    <string name="valueLux">lux</string>
+    <string name="valueDB">db</string>
 </resources>
